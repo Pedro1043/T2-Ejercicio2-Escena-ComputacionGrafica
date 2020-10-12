@@ -150,30 +150,38 @@ void inicializar()
 
 void graficarEjes()
 {
-    glColor3f(0.7,0.6,0.4);
     glBegin(GL_QUADS);
-        glVertex3f(0,0,0);
-        glVertex3f(20,0,0);
-        glVertex3f(20,0,20);
-        glVertex3f(0,0,20);
-    glEnd();
-    glColor3f(0.5,0.5,0.4);
-    glBegin(GL_QUADS);
-        glVertex3f(0,0,0);
-        glVertex3f(20,0,0);
-        glVertex3f(20,20,0);
-        glVertex3f(0,20,0);
+        glColor3ub(128,64,0);
+        glVertex3f(-10,-10,-10);
+        glVertex3f(40,-10,-10);
+        glVertex3f(40,-10,40);
+        glVertex3f(-10,-10,40);
     glEnd();
 
-    glColor3f(0.6,0.5,0.4);
     glBegin(GL_QUADS);
-        glVertex3f(0,0,0);
-        glVertex3f(0,20,0);
-        glVertex3f(0,20,20);
-        glVertex3f(0,0,20);
+        glColor3ub(254,210,129);
+        glVertex3f(-10,-10,-10);
+        glVertex3f(40,-10,-10);
+        glVertex3f(40,40,-10);
+        glVertex3f(-10,40,-10);
+    glEnd();
+
+    glBegin(GL_QUADS);
+        glColor3ub(180,190,129);
+        glVertex3f(-10,-10,-10);
+        glVertex3f(-10,40,-10);
+        glVertex3f(-10,40,40);
+        glVertex3f(-10,-10,40);
+    glEnd();
+
+    glBegin(GL_QUADS);
+        glColor3ub(0,0,0);
+        glVertex3f(-5,-5,-5);
+        glVertex3f(-5,20,-5);
+        glVertex3f(-5,20,20);
+        glVertex3f(-5,-5,20);
     glEnd();
 }
-
 void reusche(){
     gluQuadricDrawStyle(p,GLU_FILL);
     graficarEjes();

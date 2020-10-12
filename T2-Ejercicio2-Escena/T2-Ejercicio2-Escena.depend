@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1602472360 source:c:\users\pedro\desktop\computacion grafica y visual\t2-ejercicio2-escena-computaciongrafica\t2-ejercicio2-escena\main.cpp
+1602476746 source:c:\users\pedro\desktop\computacion grafica y visual\t2-ejercicio2-escena-computaciongrafica\t2-ejercicio2-escena\main.cpp
 	<GL/glut.h>
 	<iostream>
 
