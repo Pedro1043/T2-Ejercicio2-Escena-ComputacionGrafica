@@ -287,7 +287,7 @@ void reusche(){
         glPopMatrix();
     glPopMatrix();
 }
-
+/*
 void gandalf() {
 
     glScalef(escalarX, escalarY, escalarZ);
@@ -781,7 +781,7 @@ void gandalf() {
     glPopMatrix();
 
 }
-
+*/
 void sergio(){
     gluQuadricDrawStyle(p,GLU_FILL);
     graficarEjes();
@@ -923,15 +923,16 @@ void sergio(){
             glPopMatrix();
 
 
+
+
 }
 
 void bryan()
 {
-
-    glTranslated(6,0.3,-5);
-    glRotated(45,0,1,0);
     ///TRONCO
     glPushMatrix(); ///*****
+     glRotated(74,0,1,0);
+     glTranslated(8,0.3,30);
         glColor3f(1,0.3,0);
         glRotatef(sentar,1,0,0); ///DAR ANGULO
         gluCylinder(p, 1, 1, 4, 16, 16);
@@ -1361,7 +1362,7 @@ void graficar()
     bryan();
     pedro();
     jorge();
-    gandalf();
+    //gandalf();
 
     glutSwapBuffers();
 }
